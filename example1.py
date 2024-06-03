@@ -5,7 +5,7 @@ import playsound as p
 
 def playsound(event):
     print(event)
-    p.playsound("animals_dogs_x2_barking_small_001.mp3")
+    p.playsound("audio/animals_dogs_x2_barking_small_001.mp3")
 
 
 win = tk.Tk()
