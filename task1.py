@@ -1,25 +1,25 @@
 import tkinter as tk
 import playsound as p
 
-def playsound(event):
+def BOOM(event):
     print(event)
-    p.playsound("audio/animals_dogs_x2_barking_small_001.mp3")
+    p.playsound("audio/Vine_boom_dunk.mp3")
     
-def playsound(event):
+def bounce(event):
     print(event)
-    p.playsound("audio/All Trampoline Bounce Sounds- Sound Effect (Free).mp3")
+    p.playsound("audio/All_Trampoline_Bounce_Sounds-Sound_Effect_(Free).mp3")
 
-def playsound(event):
+def AmongUs(event):
     print(event)
-    p.playsound("audio/animals_dogs_x2_barking_small_001.mp3")
+    p.playsound("audio/Among_Us_Sound_Effect.mp3")
 
-def playsound(event):
+def minecraft(event):
     print(event)
-    p.playsound("audio/animals_dogs_x2_barking_small_001.mp3")
+    p.playsound("audio/Minecraft_Eating.mp3")
 
-def playsound(event):
+def suspense(event):
     print(event)
-    p.playsound("audio/animals_dogs_x2_barking_small_001.mp3")
+    p.playsound("audio/SUSPENSE_SOUND_EFFECTS.mp3")
 
 win = tk.Tk()
 
@@ -29,16 +29,28 @@ b3 = tk.Button(win,text="Click to play")
 b4 = tk.Button(win,text="Click to play")
 b5 = tk.Button(win,text="Click to play")
 
-b1.bind("<Button>",b1)
-b2.bind("<Button>",playsound)
-b3.bind("<Button>",playsound)
-b4.bind("<Button>",playsound)
-b5.bind("<Button>",playsound)
+l1 = tk.Label(win, text="Sound Board")
+l2 = tk.Label(win, text="Bounce")
+l3 = tk.Label(win, text="Among Us Effect")
+l4 = tk.Label(win, text="Minecraft Eating")
+l5 = tk.Label(win, text="Suspense")
+l6 = tk.Label(win, text="Sound Board")
 
-b1.pack()
-b2.pack()
-b3.pack()
-b4.pack()
-b5.pack()
+b1.bind("<Button>",BOOM)
+b2.bind("<Button>",bounce)
+b3.bind("<Button>",AmongUs)
+b4.bind("<Button>",minecraft)
+b5.bind("<Button>",suspense)
+
+l1.grid(row=1, column=1)
+b1.grid(row=1, column=2)
+l2.grid(row=2, column=1)
+b2.grid(row=2, column=2)
+l3.grid(row=3, column=1)
+b3.grid(row=3, column=2)
+l4.grid(row=4, column=1)
+b4.grid(row=4, column=2)
+l5.grid(row=5, column=1)
+b5.grid(row=5, column=2)
 
 win.mainloop()
